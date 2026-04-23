@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Beranda</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #000;
+            color: #e4e4e7;
+            margin: 0;
+        }
+
+        header {
+            background: #050505;
+            text-align: center;
+            padding: 30px;
+            border-bottom: 1px solid #ff0033;
+            box-shadow: 0 0 15px #ff003355;
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            color: #ff4d6d;
+            text-shadow: 0 0 10px #ff0033;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            opacity: 0.7;
+            margin-top: 5px;
+        }
+
+        nav {
+            background-color: #020202;
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #111;
+        }
+
+        nav a {
+            color: #aaa;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff4d6d;
+            text-shadow: 0 0 6px #ff0033;
+        }
+
+        .container {
+            width: 90%;
+            margin: 25px auto;
+            padding: 20px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 20px;
+        }
+
+        .text-box {
+            background: #050505;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #111;
+            transition: 0.3s;
+        }
+
+        .text-box:hover {
+            border-color: #ff0033;
+            box-shadow: 0 0 12px #ff003366;
+        }
+
+        .text-box h2 {
+            color: #ff4d6d;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        .text-box p {
+            font-size: 14px;
+            color: #bbb;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .gallery-side {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .gallery-side img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid #111;
+            transition: 0.3s;
+        }
+
+        .gallery-side img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #ff0033;
+        }
+
+        .top-center {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .bottom-section {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 20px;
+        }
+
+        footer {
+            background-color: #020202;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            color: #777;
+            border-top: 1px solid #111;
+        }
+
+        @media (max-width: 768px) {
+            .content-grid,
+            .bottom-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>RAKAI ELFIKRI S</h1>
+    <p>Karya Nyata dari Proses Belajar</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="video.html">Video</a>
+    <a href="project.html">My Project</a>
+</nav>
+
+<div class="container">
+
+    <!-- ATAS -->
+    <div class="content-grid">
+
+        <div class="gallery-side">
+            <img src="1.jpg">
+            <img src="5.jpg">
+        </div>
+
+        <div class="top-center">
+            <div class="text-box">
+                <h2>Selamat Datang</h2>
+                <p>Website ini digunakan untuk menampilkan hasil Ujian Praktik Terintegrasi.</p>
+            </div>
+
+            <div class="text-box">
+                <h2>Tentang Website</h2>
+                <p>Website ini berfungsi sebagai portofolio digital yang berisi karya dan pengalaman belajar.</p>
+            </div>
+
+            <div class="text-box">
+                <h2>Tujuan</h2>
+                <p>Menampilkan hasil karya serta melatih kemampuan membuat website sederhana.</p>
+            </div>
+        </div>
+
+        <div class="gallery-side">
+            <img src="3.jpg">
+            <img src="4.jpg">
+        </div>
+
+    </div>
+
+    <!-- BAWAH -->
+    <div class="bottom-section">
+
+        <!-- KIRI -->
+        <div>
+            <div class="text-box">
+                <h2>Topik Argumentasi</h2>
+                <p>Hubungan antara pembelajaran fotografi dengan dunia kerja.</p>
+            </div>
+        </div>
+
+        <!-- TENGAH -->
+        <div>
+            <div class="text-box">
+                <h2>Harapan</h2>
+                <p>Agar penonton memahami pentingnya pembelajaran berbasis praktik.</p>
+            </div>
+        </div>
+
+        <!-- KANAN (REFLEKSI PINDAH SINI) -->
+        <div>
+            <div class="text-box">
+                <h2>Refleksi</h2>
+                <p>Belajar tentang tanggung jawab, ketelitian, dan kreativitas.</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>Ujian Praktik Terintegrasi • SMPIT Al Haraki • 2026</p>
+</footer>
+
+</body>
+</html>

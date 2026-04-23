@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Video</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #000;
+            color: #e4e4e7;
+            margin: 0;
+        }
+
+        header {
+            background: #050505;
+            text-align: center;
+            padding: 30px;
+            border-bottom: 1px solid #ff0033;
+            box-shadow: 0 0 15px #ff003355;
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: 'Orbitron', sans-serif;
+            color: #ff4d6d;
+            text-shadow: 0 0 10px #ff0033;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            opacity: 0.7;
+            margin-top: 5px;
+        }
+
+        nav {
+            background-color: #020202;
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #111;
+        }
+
+        nav a {
+            color: #aaa;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff4d6d;
+            text-shadow: 0 0 6px #ff0033;
+        }
+
+        .container {
+            width: 90%;
+            margin: 25px auto;
+            padding: 20px;
+        }
+
+        /* TEXT */
+        .content-text {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .text-box {
+            background: #050505;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #111;
+            transition: 0.3s;
+        }
+
+        .text-box:hover {
+            border-color: #ff0033;
+            box-shadow: 0 0 12px #ff003366;
+        }
+
+        .text-box h2 {
+            color: #ff4d6d;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+
+        .text-box p {
+            font-size: 14px;
+            color: #bbb;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* VIDEO */
+        .video-box {
+            margin-top: 30px;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #111;
+            border-radius: 12px;
+            background: #050505;
+            transition: 0.3s;
+        }
+
+        .video-box:hover {
+            box-shadow: 0 0 20px #ff003355;
+        }
+
+        .video-box h2 {
+            color: #ff4d6d;
+        }
+
+        .video-box iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+            border-radius: 10px;
+            margin-top: 10px;
+            border: none;
+        }
+
+        footer {
+            background-color: #020202;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            color: #777;
+            border-top: 1px solid #111;
+        }
+
+        @media (max-width: 768px) {
+            .video-box iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>RAKAI ELFIKRI S</h1>
+    <p>Karya Nyata dari Proses Belajar</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="video.html">Video</a>
+    <a href="project.html">My Project</a>
+</nav>
+
+<div class="container">
+
+    <div class="content-text">
+
+        <div class="text-box">
+            <h2>Video Argumentasi</h2>
+            <p>
+                Video ini membahas hubungan antara pembelajaran fotografi dengan dunia kerja,
+                serta bagaimana keterampilan yang dipelajari dapat diterapkan secara nyata.
+            </p>
+        </div>
+
+        <div class="text-box">
+            <h2>Topik yang Diangkat</h2>
+            <p>
+                Keterkaitan antara pembelajaran berbasis praktik dengan kesiapan menghadapi dunia kerja.
+            </p>
+        </div>
+
+        <div class="text-box">
+            <h2>Alasan Memilih Topik</h2>
+            <p>
+                Topik ini dipilih karena pengalaman yang diperoleh selama pembelajaran menunjukkan
+                bahwa praktik memiliki peran penting dalam membentuk keterampilan.
+            </p>
+        </div>
+
+        <div class="text-box">
+            <h2>Pesan dan Harapan</h2>
+            <p>
+                Diharapkan penonton dapat memahami bahwa pembelajaran tidak hanya teori,
+                tetapi juga harus diimbangi dengan praktik agar lebih siap menghadapi dunia kerja.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- VIDEO -->
+    <div class="video-box">
+        <h2>Video Karya Saya</h2>
+
+        <iframe 
+            src="https://youtu.be/7Zn5an-rj1A?si=Wn5AZJx7TA-QRvAp"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</div>
+
+<footer>
+    <p>Ujian Praktik Terintegrasi • SMPIT Al Haraki • 2026</p>
+</footer>
+
+</body>
+</html>
